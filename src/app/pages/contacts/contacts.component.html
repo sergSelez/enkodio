@@ -1,0 +1,57 @@
+
+<div class="main-grid">
+  <div class="title-box">
+      <h1 class="title">контакты</h1> 
+  </div>
+   
+  <p class="what-is-title opasity-ani">Всегда на связи</p>
+  
+  <p class="contacts__text opasity-ani">Хотите узнать больше о&nbsp;нашем сервисе? Наша команда всегда на&nbsp;связи и&nbsp;готова помочь с&nbsp;любыми вопросами. Мы&nbsp;доступны по&nbsp;всем каналам.</p>
+  
+  <div class="contacts-box opasity-ani">
+      <div>
+          <p class="contacts__sub-title">Пишите:</p>
+          <p class="contacts__sub-title">Звоните:</p>
+      </div>
+      
+      <div class="adress__box">
+          <a class="contacts__address contacts__address--link" href="mailto:experts@enkod.io">experts@enkod.io</a>
+          <a class="contacts__address contacts__address--link" href="tel:88003508474">8-800-350-84-74</a>
+      </div>
+  </div>
+  
+  <p class="what-is-title opasity-ani">Заходите в гости</p>
+  
+  <div class="contacts__map opasity-ani">
+      <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A39e598143f227086f123a215118c645fe90b1c39f69a4b0db27f1c1d1cb62c8b&amp;width=100%&amp;lang=ru_RU&amp;scroll=true"></script> -->
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A39e598143f227086f123a215118c645fe90b1c39f69a4b0db27f1c1d1cb62c8b&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+  
+  <div class="contacts__work opasity-ani">
+      <p class="contacts__text">390027, Рязань, ул. Кальная 5</p>
+      
+      <div class="contacts-box contacts-box--down">
+          <div>
+              <p class="contacts__sub-title">ПН - ПТ</p>
+              <p class="contacts__sub-title">СБ - ВС</p>
+          </div>
+
+          <div class="adress__box">
+              <p class="contacts__address">10:00 - 18:00</p>
+              <p class="contacts__address">Выходной</p>
+          </div>
+      </div>
+  </div>
+</div>
+<script>
+  let serviseBox = document.querySelectorAll('.slide')
+
+  function activeBox(number) {
+      for (var i = 0; i < serviseBox.length; i++) {
+        if(serviseBox[i].classList.contains('slide__active')){
+          serviseBox[i].classList.remove('slide__active')
+        }
+        serviseBox[number].classList.add('slide__active')
+      }
+  }
+</script>

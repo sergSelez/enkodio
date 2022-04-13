@@ -1,0 +1,47 @@
+.main-grid {
+	padding-bottom: 140px;
+}
+.title-polit {
+	grid-column: 3/-1;
+	font-size: 46px;
+	margin-bottom: 64px;
+    margin-top: 204px;
+}
+
+@media (max-width: 1875px) {
+	.title-box {
+		margin-top: 172px;
+	}
+}
+
+@media (max-width:1279px) {
+	.title-polit {
+		font-size: 30px;
+		grid-column: 1/-1;
+		margin-top: 103px;
+		margin-bottom: 38px;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-grid {
+		padding-bottom: 70px;
+	}
+	.title-polit {
+		font-size: 24px;
+		line-height: 34px;
+		grid-column: 2/-2;
+		margin-top: 125px;
+		margin-bottom: 43px;
+	}
+}
+
+@media (max-width: 500px) {
+	.title-polit {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.main-grid {
+		padding-bottom: 50px;
+	}
+}

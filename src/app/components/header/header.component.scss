@@ -1,0 +1,136 @@
+
+.desc-menu.show {
+    left: 0;
+}
+.desc-menu__container {
+	padding: 42px 0 58px 99px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.desc-menu__soc-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: auto;
+	width: 156px;
+	height: 24px;
+}
+.desc-menu__soc-box img {
+	height: 24px;
+	width: 24px;
+	transition: .3s;
+
+	&:hover {
+		filter: contrast(50%);
+	}
+}
+
+
+.mob-button--active .mob-button__line--first,
+.mob-button--active .mob-button__line--fourth {
+	opacity: 0;
+}
+.mob-button--active .mob-button__line--second {
+	transform: rotate(45deg);
+}
+.mob-button--active .mob-button__line--third {
+	transform: rotate(-45deg);
+}
+
+.mob-menu__soc-box {
+	width: 235px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;
+	margin-bottom: 42px;
+	transform: translateX(-36px);
+
+	& img {
+		height: 24px;
+		width: 24px;
+	}
+}
+
+
+.mob-button.mob-button--active ~ .mob-menu {
+	opacity: 1;
+	z-index: 9998;
+	pointer-events: all;
+}
+.mobShow {
+	opacity: 1;
+	z-index: 9998;
+}
+
+
+
+
+// .head__fixed {
+//   position: fixed;
+//   width: 100vw;
+//   background-color: #fff;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 200px 0 100px;
+//   z-index: 9999;
+//   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+// }
+
+@media (max-width:1279px) {
+	.mob-button {
+		display: block;
+	}
+	.mob-menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.mob-menu__box {
+		width: 200px;
+		margin-top: 10%;
+	}
+	.desc-menu {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.mob-menu__box {
+		width: 180px;
+		margin-top: 10%;
+	}
+}
+
+@media (max-width: 350px) {
+	.mob-menu__link {
+		margin-bottom: 18px;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+  .mob-menu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 40px 40px 50px 46px;
+  }
+  .mob-menu__box {
+	  width: 100%;
+  }
+  .mob-menu__link {
+	margin-right: 30px;
+	display: inline-block;
+  }
+  .mob-menu__soc-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .mob-menu__soc-box img {
+    margin-right: 30px;
+  }
+}

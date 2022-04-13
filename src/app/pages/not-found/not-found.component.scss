@@ -1,0 +1,130 @@
+body {
+    background-color: #1B1B1E;
+}
+.demo__button {
+  color: #49494B !important;
+}
+.title {
+  color: #fff;
+  font-size: 140px;
+  line-height: 140px;
+  transform: translateX(0);
+  animation: none;
+}
+.error-box {
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  z-index: 1;
+}
+.error-pic {
+	width: 210px;
+	height: 220px;
+  margin-bottom: 30px;
+	margin-top: 70px;
+}
+.error-text {
+	font-size: 36px;
+	line-height: 46px;
+	text-transform: uppercase;
+	font-weight: bold;
+  margin-top: 20px;
+	margin-bottom: 76px;
+  color: #fff;
+}
+.error-button {
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 271px;
+	height: 271px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	text-decoration: none;
+  position: relative;
+  margin-bottom: 100px;
+}
+.button-text {
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+  color: #fff;
+	// margin-bottom: 46px;
+}
+.button-arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(34px);
+  transition: .3s;
+  // margin-top: 18px;
+}
+.error-button:hover .button-arrow {
+  transform: translateY(48px);
+}
+
+@media (max-width:1366px) {
+  .error-pic {
+    width: 100px;
+    height: 105px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .error-text {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+  .error-button {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 70px;
+  }
+  .button-text {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .button-arrow {
+    width: 20px;
+    height: 20px;
+    transform: translateY(30px);
+  }
+  .error-button:hover .button-arrow {
+    transform: translateY(40px);
+  }
+}
+
+@media (max-width:767px) {
+  .error-box {
+    grid-column: 2 / -2;
+  }
+  .error-pic {
+    width: 110px;
+    height: 115px;
+  }
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .error-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .error-button {
+    width: 160px;
+    height: 160px;
+  }
+  .button-text {
+    font-size: 14px;
+  }
+  .button-arrow {
+    width: 14px;
+    height: 14px;
+  }
+}

@@ -1,0 +1,801 @@
+<footer [ngClass]="{'not-found': (abs$ | async) === '404', 'white-footer': (abs$ | async) === 'politics'} " data-aos="fade-up" data-aos-once="true">
+  <div class="main-grid">
+    <div class="footer-work opasity-ani" [ngSwitch]="abs$ | async">
+      <p *ngSwitchCase="'capabilities'">
+        Весь маркетинг в&nbsp;одном окне
+      </p>
+      <p *ngSwitchCase="'main'">
+        Весь маркетинг в&nbsp;одном окне
+      </p>
+      <p *ngSwitchCase="'get-started'">
+        Весь маркетинг в&nbsp;одном окне
+      </p>
+      <p *ngSwitchCase="'mission'">
+        Весь маркетинг в&nbsp;одном окне
+      </p>
+      <p *ngSwitchCase="'about'">
+        Работа в&nbsp;enKod
+      </p>
+      <p *ngSwitchCase="'contacts'">
+        Расскажите о&nbsp;своей задаче
+      </p>
+      <p *ngSwitchCase="'partners'">
+        Весь маркетинг в&nbsp;одном окне
+      </p>
+      <p *ngSwitchCase="'demo'">
+
+      </p>
+      <p *ngSwitchCase="'elle.nikiforova'">
+        Демо
+      </p>
+      <p *ngSwitchCase="'kristina.markina'">
+        Демо
+      </p>
+      <p *ngSwitchCase="'maxim.tishininov'">
+        Демо
+      </p>
+      <p *ngSwitchCase="'alexander.chernov'">
+        Демо
+      </p>
+      <p *ngSwitchCase="'artur.kharitonov'">
+        Демо
+      </p>
+      <p *ngSwitchCase="'price'">
+        Демо
+      </p>
+      <p *ngSwitchDefault>
+
+      </p>
+    </div>
+
+    <!-- <p class="footer-work">Работа в&nbsp;enKod</p> -->
+
+    <div class="footer-title opasity-ani" [ngSwitch]="abs$ | async" >
+      <p *ngSwitchCase="'get-started'">
+        <span>готовы</span> начать?
+      </p>
+      <p *ngSwitchCase="'mission'">
+        <span>готовы</span> начать?
+      </p>
+      <p *ngSwitchCase="'capabilities'">
+        <span>есть</span> вопросы?
+      </p>
+      <p *ngSwitchCase="'main'">
+        <span>есть</span> вопросы?
+      </p>
+      <p *ngSwitchCase="'about'">
+        хочу <span>у вас</span> работать
+      </p>
+      <p *ngSwitchCase="'contacts'">
+        Ответим <span>на вопросы</span>
+      </p>
+      <p *ngSwitchCase="'partners'">
+        <span>готовы</span> начать?
+      </p>
+      <p *ngSwitchCase="'demo'">
+
+      </p>
+      <p *ngSwitchCase="'elle.nikiforova'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchCase="'kristina.markina'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchCase="'maxim.tishininov'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchCase="'alexander.chernov'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchCase="'artur.kharitonov'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchCase="'price'" class="footer-title--small">
+        <span>Запросить</span> <br> демонстрацию
+      </p>
+      <p *ngSwitchDefault>
+
+      </p>
+    </div>
+
+    <!-- <p class="footer-title">хочу <span>у вас</span> работать</p> -->
+
+    <!-- <p class="footer-text">
+      Возможно у&nbsp;нас есть место именно для тебя! Напиши на&nbsp;почту
+      <a href="mailto:hr@enkod.ru">hr@enkod.ru</a> и&nbsp;мы&nbsp;с&nbsp;тобой
+      свяжемся.
+    </p> -->
+
+    <div class="footer-text opasity-ani" [ngSwitch]="abs$ | async">
+      <p *ngSwitchCase="'capabilities'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'main'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'mission'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'get-started'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'about'">
+        Возможно у&nbsp;нас есть место именно для тебя! Напиши на&nbsp;почту
+        <a href="mailto:hr@enkod.ru">hr@enkod.ru</a> и&nbsp;мы&nbsp;с&nbsp;тобой
+        свяжемся.
+      </p>
+      <p *ngSwitchCase="'contacts'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'partners'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'demo'">
+
+      </p>
+      <p *ngSwitchCase="'guys'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'elle.nikiforova'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'kristina.markina'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'maxim.tishininov'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'alexander.chernov'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'artur.kharitonov'">
+        Оставьте емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные, может быть, немного больше 🙂
+      </p>
+      <p *ngSwitchCase="'price'">
+        Лучший способ понять подходит&nbsp;ли сервис enKod под ваши задачи&nbsp;&mdash; это посмотреть его изнутри и&nbsp;пообщаться с&nbsp;нашим менеджером. Мы&nbsp;дадим вам месячный тестовый период на&nbsp;знакомство с&nbsp;enKod.
+      </p>
+      <p *ngSwitchDefault>
+
+      </p>
+    </div>
+<!-- Форма для что можем   -->
+
+    <form *ngIf="(abs$ | async) === 'capabilities' || (abs$ | async) === 'main' ||  (abs$ | async) === 'mission' || (abs$ | async) === 'partners'" class="form opasity-ani" [formGroup]="formCapabilities" (ngSubmit)="submit()">
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="email"
+          placeholder="Емейл"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formCapabilities.get('email').invalid && formCapabilities.get('email').touched"
+        >
+          <p *ngIf="formCapabilities.get('email').errors.required">Введите емейл</p>
+          <p *ngIf="formCapabilities.get('email').errors.email">Неверный емейл</p>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <div>
+          <div class="form__input-container">
+            <input
+              class="form__input--email"
+              type="text"
+              name=""
+              value=""
+              formControlName="question"
+              placeholder="Задавайте вопрос"
+            />
+          </div>
+
+          <!-- Чек-бокс с подтверждением -->
+          <div class="form__checkbox-container form__input-container--mt">
+
+              <input
+                class="form__input form__input--checkbox"
+                type="checkbox"
+                formControlName="checkbox" id="checkbox"
+              />
+              <label class="form__label" for="checkbox">
+                Я&nbsp;согласен на&nbsp;обработку
+                <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__submit">
+          Отправить
+        </button>
+      </div>
+
+      <div
+        class="form-unsubmited" style="color: white;"
+        [ngClass]="{ 'form-submited': formSubmited }"
+      >
+        <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+        <img src="/assets/img/form-pic.svg" alt="">
+      </div>
+    </form>
+
+<!-- Форма для Как начать -->
+
+    <form *ngIf="(abs$ | async) === 'get-started'" class="form opasity-ani" [formGroup]="formGetstarted" (ngSubmit)="submit()">
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="email"
+          placeholder="Емейл"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formGetstarted.get('email').invalid && formGetstarted.get('email').touched"
+        >
+          <p *ngIf="formGetstarted.get('email').errors.required">Введите емейл</p>
+          <p *ngIf="formGetstarted.get('email').errors.email">Неверный емейл</p>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <div>
+          <div class="form__input-container">
+            <input
+              class="form__input--email"
+              type="text"
+              name=""
+              value=""
+              formControlName="question"
+              placeholder="Задавайте вопрос"
+            />
+          </div>
+
+          <!-- Чек-бокс с подтверждением -->
+          <div class="form__checkbox-container form__input-container--mt">
+
+              <input
+                class="form__input form__input--checkbox"
+                type="checkbox"
+                formControlName="checkbox" id="checkbox"
+              />
+              <label class="form__label" for="checkbox">
+                Я&nbsp;согласен на&nbsp;обработку
+                <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__submit">
+          Отправить
+        </button>
+      </div>
+
+      <div
+        class="form-unsubmited" style="color: white;"
+        [ngClass]="{ 'form-submited': formSubmited }"
+      >
+        <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+        <img src="/assets/img/form-pic.svg" alt="">
+      </div>
+    </form>
+
+<!-- Форма для Контакты -->
+
+<form *ngIf="(abs$ | async) === 'contacts'" class="form opasity-ani" [formGroup]="formContacts" (ngSubmit)="submit()">
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="email"
+      placeholder="Емейл"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formContacts.get('email').invalid && formContacts.get('email').touched"
+    >
+      <p *ngIf="formContacts.get('email').errors.required">Введите емейл</p>
+      <p *ngIf="formContacts.get('email').errors.email">Неверный емейл</p>
+    </div>
+  </div>
+
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="telephone"
+      placeholder="Телефон"
+      [imask]="{mask: '+{0} (000) 000-00-00'}"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formContacts.get('telephone').invalid && formContacts.get('telephone').touched"
+    >
+      <p *ngIf="formContacts.get('telephone').errors.required">Введите телефон</p>
+      <p *ngIf="formContacts.get('telephone').errors.pattern">Неверный номер</p>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <div>
+      <div class="form__input-container ">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="message"
+          placeholder="Задайте вопрос"
+        >
+      </div>
+
+      <!-- Чек-бокс с подтверждением -->
+      <div class="form__checkbox-container form__input-container--mt">
+
+          <input
+            class="form__input form__input--checkbox"
+            type="checkbox"
+            formControlName="checkbox" id="checkbox"
+          />
+          <label class="form__label" for="checkbox">
+            Я&nbsp;согласен на&nbsp;обработку
+            <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+      </div>
+    </div>
+
+    <button type="submit" class="form__submit">
+      Отправить
+    </button>
+  </div>
+
+  <div
+    class="form-unsubmited" style="color: white;"
+    [ngClass]="{ 'form-submited': formSubmited }"
+  >
+    <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+    <img src="/assets/img/form-pic.svg" alt="">
+  </div>
+</form>
+
+<!-- Форма для о команде  -->
+
+    <form *ngIf="(abs$ | async) === 'about'" class="form opasity-ani" [formGroup]="formAbout" (ngSubmit)="submit()">
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="name"
+          placeholder="Имя, Фамилия"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formAbout.get('name').invalid && formAbout.get('name').touched"
+        >
+          <p>Введите имя</p>
+        </div>
+      </div>
+
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="telephone"
+          placeholder="Телефон"
+          [imask]="{mask: '+{0} (000) 000-00-00'}"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formAbout.get('telephone').invalid && formAbout.get('telephone').touched"
+        >
+          <p *ngIf="formAbout.get('telephone').errors.required">Введите телефон</p>
+          <p *ngIf="formAbout.get('telephone').errors.pattern">Неверный номер</p>
+        </div>
+      </div>
+
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="link"
+          placeholder="Ссылка на портфолио или резюме"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formAbout.get('link').invalid && formAbout.get('link').touched"
+        >
+          <p *ngIf="formAbout.get('link').errors.required">Введите ссылку</p>
+          <p *ngIf="formAbout.get('link').errors.pattern">Неверная ссылка</p>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <div>
+          <div class="form__input-container">
+            <input
+              class="form__input--email"
+              type="text"
+              name=""
+              value=""
+              formControlName="email"
+              placeholder="Емейл"
+            />
+
+            <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+            <div
+              class="form__error"
+              *ngIf="formAbout.get('email').invalid && formAbout.get('email').touched"
+            >
+              <p *ngIf="formAbout.get('email').errors.required">Введите емейл</p>
+              <p *ngIf="formAbout.get('email').errors.email">Неверный емейл</p>
+            </div>
+          </div>
+
+          <!-- Чек-бокс с подтверждением -->
+          <div class="form__checkbox-container form__input-container--mt">
+
+              <input
+                class="form__input form__input--checkbox"
+                type="checkbox"
+                formControlName="checkbox" id="checkbox"
+              />
+              <label class="form__label" for="checkbox">
+                Я&nbsp;согласен на&nbsp;обработку
+                <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__submit">
+          Отправить
+        </button>
+      </div>
+
+      <div
+        class="form-unsubmited" style="color: white;"
+        [ngClass]="{ 'form-submited': formSubmited }"
+      >
+        <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+        <img src="/assets/img/form-pic.svg" alt="">
+      </div>
+    </form>
+
+<!-- Форма для демо страницы  -->
+
+    <form *ngIf="(abs$ | async) === 'demo' || (abs$ | async) === 'price'" class="form opasity-ani" [formGroup]="formDemo" (ngSubmit)="submit()">
+      <div [ngClass]="{'form__input--submited': formSubmited}" class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="name"
+          placeholder="Имя, Фамилия"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formDemo.get('name').invalid && formDemo.get('name').touched"
+        >
+          <p>Введите имя</p>
+        </div>
+      </div>
+
+      <div [ngClass]="{'form__input--submited': formSubmited}" class="form__input-container">
+
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="email"
+          placeholder="Емейл"
+        />
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formDemo.get('email').invalid && formDemo.get('email').touched"
+        >
+          <p *ngIf="formDemo.get('email').errors.required">Введите емейл</p>
+          <p *ngIf="formDemo.get('email').errors.email">Неверный емейл</p>
+        </div>
+      </div>
+
+      <div [ngClass]="{'form__input--submited': formSubmited}" class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="telephone"
+          placeholder="Телефон"
+          [imask]="{mask: '+{0} (000) 000-00-00'}"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formDemo.get('telephone').invalid && formDemo.get('telephone').touched"
+        >
+          <p *ngIf="formDemo.get('telephone').errors.required">Введите телефон</p>
+          <p *ngIf="formDemo.get('telephone').errors.pattern">Неверный номер</p>
+        </div>
+      </div>
+
+      <div [ngClass]="{'form__input--submited': formSubmited}" class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="company"
+          placeholder="Компания"
+        />
+
+        <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+        <div
+          class="form__error"
+          *ngIf="formDemo.get('company').invalid && formDemo.get('company').touched"
+        >
+          <p>Введите компанию</p>
+        </div>
+      </div>
+
+      <div [ngClass]="{'form__input--submited': formSubmited}" class="form-box">
+        <div>
+          <div class="form__input-container">
+            <input
+              class="form__input--email"
+              type="text"
+              name=""
+              value=""
+              formControlName="activity"
+              placeholder="Сфера деятельности"
+            />
+          </div>
+
+          <!-- Чек-бокс с подтверждением -->
+          <div class="form__checkbox-container form__input-container--mt">
+
+              <input
+                class="form__input form__input--checkbox"
+                type="checkbox"
+                formControlName="checkbox" id="checkbox"
+              />
+              <label class="form__label" for="checkbox">
+                Я&nbsp;согласен на&nbsp;обработку
+                <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__submit">
+          Отправить
+        </button>
+      </div>
+
+      <div
+        class="form-unsubmited form-unsubmited--demo" style="color: white;"
+        [ngClass]="{ 'form-submited': formSubmited }"
+      >
+        <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+        <img src="/assets/img/form-pic.svg" alt="">
+      </div>
+    </form>
+
+<!-- Форма для ребят  -->
+
+<form *ngIf="(abs$ | async) === 'elle.nikiforova' || (abs$ | async) === 'kristina.markina' ||  (abs$ | async) === 'maxim.tishininov' ||  (abs$ | async) === 'alexander.chernov' ||  (abs$ | async) === 'artur.kharitonov'" class="form opasity-ani" [formGroup]="formDemo" (ngSubmit)="submit()">
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="name"
+      placeholder="Имя, Фамилия"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formDemo.get('name').invalid && formDemo.get('name').touched"
+    >
+      <p>Введите имя</p>
+    </div>
+  </div>
+
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="email"
+      placeholder="Емейл"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formDemo.get('email').invalid && formDemo.get('email').touched"
+    >
+      <p *ngIf="formDemo.get('email').errors.required">Введите емейл</p>
+      <p *ngIf="formDemo.get('email').errors.email">Неверный емейл</p>
+    </div>
+  </div>
+
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="telephone"
+      placeholder="Телефон"
+      [imask]="{mask: '+{0} (000) 000-00-00'}"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formDemo.get('telephone').invalid && formDemo.get('telephone').touched"
+    >
+      <p *ngIf="formDemo.get('telephone').errors.required">Введите телефон</p>
+      <p *ngIf="formDemo.get('telephone').errors.pattern">Неверный номер</p>
+    </div>
+  </div>
+
+  <div class="form__input-container">
+    <input
+      class="form__input--email"
+      type="text"
+      name=""
+      value=""
+      formControlName="company"
+      placeholder="Компания"
+    />
+
+    <img class="form__image error" src="/assets/img/error.svg" alt="" />
+
+    <div
+      class="form__error"
+      *ngIf="formDemo.get('company').invalid && formDemo.get('company').touched"
+    >
+      <p>Введите компанию</p>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <div>
+      <div class="form__input-container">
+        <input
+          class="form__input--email"
+          type="text"
+          name=""
+          value=""
+          formControlName="activity"
+          placeholder="Сфера деятельности"
+        />
+      </div>
+
+      <!-- Чек-бокс с подтверждением -->
+      <div class="form__checkbox-container form__input-container--mt">
+
+          <input
+            class="form__input form__input--checkbox"
+            type="checkbox"
+            formControlName="checkbox" id="checkbox"
+          />
+          <label class="form__label" for="checkbox">
+            Я&nbsp;согласен на&nbsp;обработку
+            <a target="_blank" routerLink="processing-of-personal-data">персональных&nbsp;данных</a></label>
+      </div>
+    </div>
+
+    <button type="submit" class="form__submit">
+      Отправить
+    </button>
+  </div>
+
+  <div
+    class="form-unsubmited" style="color: white;"
+    [ngClass]="{ 'form-submited': formSubmited }"
+  >
+    <p class="form-submited__text">Спасибо что оставили ваш емейл, менеджер свяжется с&nbsp;вами в&nbsp;течение 20&nbsp;минут. В&nbsp;выходные может быть немного больше 🙂</p>
+
+    <img src="/assets/img/form-pic.svg" alt="">
+  </div>
+</form>
+
+    <div [ngClass]="{'footer-link--black': (abs$ | async) === 'politics'}" class="footer-linkbox opasity-ani">
+      <div class="footer-link-div footer-link--1st footer-link--mob1st">
+        <a target="_blank" class="footer-link" href="https://vk.com/enkodio">VK</a>
+      </div>
+
+      <div class="footer-link-div footer-link--2st footer-link--mob2st">
+        <a target="_blank" class="footer-link" href="https://www.instagram.com/enkodio/?igshid=isy1ptfibhq9">Instagram</a>
+      </div>
+
+      <div class="footer-link-div footer-link--3st footer-link--mob1st">
+        <a  class="footer-link" href="mailto:experts@enkod.io">experts@enkod.io</a>
+      </div>
+
+      <div class="footer-link-div footer-link--1st footer-link--mob1st">
+        <a target="_blank" class="footer-link" href="https://www.facebook.com/enkodio">Facebook</a>
+      </div>
+
+      <div class="footer-link-div footer-link--2st footer-link--mob2st">
+        <a target="_blank" class="footer-link" href="https://zen.yandex.ru/id/5f8ef360e73867664e9f5170?utm_source=site&utm_medium=footer&utm_campaign=yandex-zen">Yandex.Zen</a>
+      </div>
+
+      <div class="footer-link-div footer-link--3st footer-link--mob2st">
+        <a  class="footer-link" href="tel:+78003508474">8 (800) 350-84-74</a>
+      </div>
+    </div>
+
+    <a class="footer-politic footer-politic--1st" routerLink="privacy-policy"
+      >Политика конфиденциальности</a
+    >
+    <a class="footer-politic footer-politic--2st" routerLink="cookie"
+      >Политика cookie</a
+    >
+    <a class="footer-politic footer-politic--1st"
+      routerLink="processing-of-personal-data"
+      >Политика в&nbsp;отношении обработки персональных данных</a
+    >
+    <a class="footer-politic footer-politic--2st" routerLink="security"
+      >Безопасность</a
+    >
+  </div>
+
+  <div class="up-button" (click)="goUp()">
+    <svg class="up-button__img" viewBox="0 0 18 10">
+      <path d="M8.50611 0.35475L0.194424 8.66644C-0.0713229 8.9416 -0.0636931 9.38008 0.211469 9.64582C0.479894 9.90508 0.905422 9.90508 1.17381 9.64582L8.9958 1.82383L16.8178 9.64582C17.0883 9.91624 17.5267 9.91624 17.7972 9.64582C18.0676 9.37533 18.0676 8.9369 17.7972 8.66644L9.48549 0.35475C9.215 0.0843356 8.77657 0.0843355 8.50611 0.35475Z" fill=""/>
+    </svg>
+  </div>
+</footer>

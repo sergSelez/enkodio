@@ -1,0 +1,47 @@
+<div class="team opasity-ani">
+  <div class="team-box">
+    <p class="team-title">Лица <br> команды enKod</p>
+
+    <div class="photo-box">
+      <a (click)="menuService.menuTrigger = false; menuService.mobileMenuTrigger = false "
+        [ngClass]="{'worker--hide': (abs$ | async) === 'elle.nikiforova'}" routerLink="../elle.nikiforova"
+        class="worker">
+        <img class="worker-photo" src="/assets/img/about-team/elleN.jpg" alt="">
+        <p class="worker-name">Элеонора Никифорова</p>
+        <p class="worker-place">Генеральный директор enKod</p>
+      </a>
+
+      <a (click)="menuService.menuTrigger = false; menuService.mobileMenuTrigger = false "
+        [ngClass]="{'worker--hide': (abs$ | async) === 'kristina.markina'}" routerLink="../kristina.markina"
+        class="worker">
+        <img class="worker-photo" src="/assets/img/about-team/krisM.jpg" alt="">
+        <p class="worker-name">Кристина Маркина</p>
+        <p class="worker-place">Коммерческий директор</p>
+      </a>
+
+      <a (click)="menuService.menuTrigger = false; menuService.mobileMenuTrigger = false "
+        [ngClass]="{'worker--hide': (abs$ | async) === 'alexander.chernov'}" routerLink="../alexander.chernov"
+        class="worker">
+        <img class="worker-photo" src="/assets/img/about-team/alexCh.jpg" alt="">
+        <p class="worker-name">Александр Чернов</p>
+        <p class="worker-place">Менеджер проекта</p>
+      </a>
+
+      <!-- <a (click)="menuService.menuTrigger = false; menuService.mobileMenuTrigger = false "
+        [ngClass]="{'worker--hide': (abs$ | async) === 'maxim.tishininov'}" routerLink="../maxim.tishininov"
+        class="worker">
+        <img class="worker-photo" src="/assets/img/about-team/maximT.jpg" alt="">
+        <p class="worker-name">Максим Тишининов</p>
+        <p class="worker-place">Директор по качеству сервиса</p>
+      </a> -->
+
+      <a (click)="menuService.menuTrigger = false; menuService.mobileMenuTrigger = false "
+        [ngClass]="{'worker--hide': (abs$ | async) === 'artur.kharitonov'}" routerLink="../artur.kharitonov"
+        class="worker">
+        <img class="worker-photo" src="/assets/img/about-team/arturKh-color.jpg" alt="">
+        <p class="worker-name">Артур Харитонов</p>
+        <p class="worker-place">Директор по маркетингу</p>
+      </a>
+    </div>
+  </div>
+</div>

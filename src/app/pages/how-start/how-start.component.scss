@@ -1,0 +1,124 @@
+:host ::ng-deep .title-box {
+  transform: translateX(-6px);
+}
+.what-box {
+    grid-column: 6 / -3;
+}
+.what-is-title {
+    margin-top: 10px;
+}
+.what-box__title {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    line-height: 56px;
+    color: #1B1B1E;
+    position: relative;
+    padding-left: 74px;
+    margin-bottom: 16px;
+}
+.what-box__title::before {
+    content: '1';
+    font-family: 'Jost', sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #FF2856;
+    border-radius: 100px;
+    left: 0;
+    box-sizing: border-box;
+}
+.what-box__title--2::before {
+    content: '2';
+    border: 1px solid #1DC296;
+}
+.what-box__title--3::before {
+    content: '3';
+    border: 1px solid #0079FF;
+}
+.what-box__title--4::before {
+    content: '4';
+    border: 1px solid #FFCD4C;
+}
+.what-box__text {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #1B1B1E;
+    margin-bottom: 42px;
+}
+.what-box__text--mb {
+    margin-bottom: 200px;
+}
+
+@media (max-width:1875px) {
+    .what-box__title {
+        font-size: 22px;
+        line-height: 42px;
+        padding-left: 56px;
+        margin-bottom: 14px;
+        margin-top: 6px;
+    }
+    .what-box__title::before {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+    .what-box__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .what-box__text--mb {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width:1279px) {
+    :host ::ng-deep .title-box {
+      transform: translateX(-5px);
+    }
+    .what-is-title {
+        grid-column: 1 / 5;
+    }
+    .what-box {
+        grid-column: 5 / -1;
+    }
+    .what-box__title {
+        font-size: 18px;
+        line-height: 36px;
+        padding-left: 52px;
+    }
+    .what-box__title::before {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    .what-box__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 32px;
+    }
+    .what-box__text--mb {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:767px) {
+    .what-is-title {
+        grid-column: 2 / 5;
+        margin-top: 0px;
+    }
+    .what-box {
+        grid-column: 2 / -2;
+    }
+}
+
+@media (max-width: 369px) {
+    :host ::ng-deep .title-box {
+        transform: translateX(-6px);
+      }
+}

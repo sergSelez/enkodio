@@ -1,0 +1,210 @@
+:host ::ng-deep .title-box {
+  transform: translateX(1px);
+}
+.element__img {
+  border-color: #29292B;
+}
+.menu {
+    color: #fff;
+    background-image: linear-gradient(currentColor, currentColor);
+}
+/*
+.enkod-logo {
+    fill: #ffffff;
+}
+*/
+.demo__button {
+    color: #fff;
+    opacity: .2;
+}
+.title {
+    color: #fff;
+    font-size: 140px;
+}
+.demo-sub-title {
+    grid-column: 3 / 6;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+}
+.demo-text {
+    grid-column: 6 / -2;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 80px;
+    z-index: 2;
+}
+.demo-item {
+    grid-column: 6 / 10;
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+    position: relative;
+    padding-left: 50px;
+    z-index: 2;
+}
+.demo-item::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    display: block;
+    position: absolute;
+    background-image: url(/assets/img/demo/yellow-conf.svg);
+    background-size: 36px 36px;
+}
+.demo-item:nth-last-of-type(1),
+.demo-item:nth-last-of-type(3) {
+    grid-column: -6 / -1;
+}
+footer {
+    padding-top: 128px;
+}
+.form-box {
+    margin-bottom: 28px;
+}
+.form-box:nth-of-type(5) {
+    margin-bottom: 0px;
+}
+.opasity-ani-2 {
+    animation-delay: 1.1s;
+}
+.opasity-ani-3 {
+    animation-delay: 1.2s;
+}
+.opasity-ani-4 {
+    animation-delay: 1.3s;
+}
+
+@media (max-width: 1875px) {
+    footer {
+        padding-top: 74px;
+    }
+    .title {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .demo-sub-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .demo-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .demo-item {
+        font-size: 22px;
+        line-height: 26px;
+        padding-left: 42px;
+    }
+    .demo-item:nth-last-of-type(1),
+    .demo-item:nth-last-of-type(2) {
+        transform: translateY(-16px)
+    }
+    .demo-item::before {
+        width: 28px;
+        height: 28px;
+        background-size: 28px 28px;
+    }
+    .form-box {
+        margin-bottom: 14px;
+    }
+    .form-box:nth-of-type(5) {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:1279px) {
+    .title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .demo-sub-title {
+        grid-column: 1 / 5;
+        font-size: 18px;
+        line-height: 24px;
+        height: 24px;
+    }
+    .demo-text {
+        grid-column: 5 / -1;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .demo-item,
+    .demo-item:nth-last-of-type(1),
+    .demo-item:nth-last-of-type(3){
+        grid-column: 5 / -1;
+        margin-bottom: 20px;
+    }
+    .demo-item:nth-last-of-type(1),
+    .demo-item:nth-last-of-type(2) {
+        transform: translateY(0px)
+    }
+    .demo-item {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:767px) {
+    :host ::ng-deep .title-box {
+      transform: translateX(-1px);
+    }
+    .demo-sub-title,
+    .demo-text,
+    .demo-item {
+        grid-column: 2 / -2;
+    }
+    .demo-item:nth-last-of-type(1),
+    .demo-item:nth-last-of-type(3) {
+        grid-column: 2 / -2;
+    }
+    .demo-item:nth-last-of-type(1) {
+        margin-bottom: 2px;
+    }
+    .form-box {
+        margin-bottom: 8px;
+    }
+    .title {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .demo-sub-title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 14px;
+        height: auto;
+    }
+    .demo-sub-title--mb {
+        margin-bottom: 30px;
+    }
+    .demo-text {
+        margin-bottom: 52px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 369px) {
+    :host ::ng-deep .title-box {
+      transform: translateX(-4px);
+    }
+    .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .demo-text {
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width: 340px) {
+    .title {
+        font-size: 26px;
+    }
+}

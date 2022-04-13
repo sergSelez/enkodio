@@ -1,0 +1,129 @@
+
+<div class="main-grid">
+  <div class="title-box">
+      <h1 class="title">что можем</h1>
+  </div>
+
+
+  <p class="what-can-title opasity-ani">Наши сервисы</p>
+
+  <div class="slide slide--enSend opasity-ani"
+    (click)="selectedSlide = 'ensend'"
+    [ngClass]="{'slide__active': selectedSlide === 'ensend'}">
+      <img class="slide__img" src="/assets/img/capabilities/ens-logo.svg" alt="">
+      <!-- <p class="slide__text">enSend</p> -->
+      <div class="slide__line"></div>
+  </div>
+
+  <div class="slide slide--enPop opasity-ani"
+    (click)="selectedSlide = 'enpop'"
+    [ngClass]="{'slide__active': selectedSlide === 'enpop'}">
+      <img class="slide__img" src="/assets/img/capabilities/enp-logo.svg" alt="">
+      <!-- <p class="slide__text">enPop</p> -->
+      <div class="slide__line"></div>
+  </div>
+
+  <div class="slide slide--enRecom opasity-ani"
+    (click)="selectedSlide = 'enrecom'"
+    [ngClass]="{'slide__active': selectedSlide === 'enrecom'}">
+      <img class="slide__img" src="/assets/img/capabilities/enr-logo.svg" alt="">
+      <!-- <p class="slide__text">enRecom</p> -->
+      <div class="slide__line"></div>
+  </div>
+
+  <div class="slide slide--enPromo opasity-ani">
+      <img class="slide__img" src="/assets/img/capabilities/enpr-logo.svg" alt="">
+
+      <div>
+        <!-- <p class="slide__text">enPromo</p> -->
+        <p class="slide__small-text">В разработке</p>
+      </div>
+  </div>
+
+  <div class="service opasity-ani">
+      <div class="service-box service--enSend">
+          <p class="service-box__text service-box__text--mt"><b>enSend</b>&nbsp;&mdash; автоматизирует все коммуникации с&nbsp;вашими клиентами: email, push и&nbsp;мессенджеры. Настройте условия для отправки один раз и&nbsp;не&nbsp;занимайтесь ручной работой. Оценивайте результаты отправок с&nbsp;помощью понятных отчетов.</p>
+
+          <p class="service-box__title">Делить аудиторию на сегменты</p>
+
+          <p class="service-box__text">Это поможет сделать ваши рассылки персональными и&nbsp;эффективными. Просто задайте нужные условия, и&nbsp;они будут автоматически отправляться подписчикам.</p>
+
+          <p class="service-box__title service-box__title--2">Делать карты рассылок</p>
+
+          <p class="service-box__text">Чтобы путь ваших клиентов был перед глазами&nbsp;&mdash; визуализируйте сценарии отправки.</p>
+
+          <p class="service-box__title service-box__title--3">Автоматизировать общение</p>
+
+          <p class="service-box__text">Долой ручную работу! Настройте сценарии и&nbsp;отправляйте email, sms, push-уведомления и&nbsp;сообщения в&nbsp;мессенджеры автоматически.</p>
+
+          <p class="service-box__title service-box__title--4">Анализировать отчеты</p>
+
+          <p class="service-box__text">Теперь вы&nbsp;точно не&nbsp;запутаетесь. Мы&nbsp;сделали все, чтобы отчеты были гибкими, простыми и&nbsp;понятными. Настраивайте фильтры и&nbsp;следите за&nbsp;статистикой, которая имеет для вас значение.</p>
+
+          <a target="_blank" href="https://ensend.io/?utm_source=site-enKod&utm_medium=services&utm_campaign=enSend" class="service-box__link">
+              <p class="link__text">Сайт enSend</p>
+
+              <img class="link__img" src="/assets/img/capabilities/arrow.svg" alt="">
+          </a>
+      </div>
+
+      <div class="service-box service--enPop">
+          <p class="service-box__text service-box__text--mt"><b>enPop</b>&nbsp;&mdash; собирает базу контактов с&nbsp;помощью всплывающих окон, которые не&nbsp;бесят. Хранит информацию о&nbsp;действиях каждого пользователя. Используйте эти данные для настройки триггерных рассылок или для показа товарных рекомендаций.</p>
+
+          <p class="service-box__title service-box__title--2-1">Собрать базу контактов</p>
+
+          <p class="service-box__text">При грамотном использовании всплывающие окна увеличивают базу контактов на&nbsp;10%. Проверьте, сколько получится у&nbsp;вас?</p>
+
+          <p class="service-box__title service-box__title--2-2">Показывать поп-апы</p>
+
+          <p class="service-box__text">Тем, кому нужно, а&nbsp;не&nbsp;всем подряд! Используйте фильтры для детальной сегментации аудитории и&nbsp;показывайте всплывающее окна только в&nbsp;нужное время.</p>
+
+          <p class="service-box__title service-box__title--2-3">Хранить данные клиентов</p>
+
+          <p class="service-box__text">Собирайте информацию о&nbsp;всех действиях пользователей на&nbsp;сайте. Используйте эти данные в&nbsp;триггерных рассылках или для формирования рекомендаций.</p>
+
+          <a target="_blank" href="https://enpop.ru/?utm_source=site-enKod&utm_medium=services&utm_campaign=enPop" class="service-box__link">
+              <p class="link__text">Сайт enPop</p>
+
+              <img class="link__img" src="/assets/img/capabilities/arrow.svg" alt="">
+          </a>
+      </div>
+
+      <div class="service-box service--enRecom">
+          <p class="service-box__text service-box__text--mt"><b>enRecom</b>&nbsp;&mdash; создает модель товарных рекомендаций и&nbsp;предлагает вашим клиентам только&nbsp;то, что им&nbsp;нужно. Осторожно, инструмент приносит дополнительную прибыль. Вам не&nbsp;нужно разбираться в&nbsp;нейронных сетях и&nbsp;сложных алгоритмах, мы&nbsp;уже сделали это для вас.</p>
+
+          <p class="service-box__title service-box__title--3-1">Рекомендовать популярное</p>
+
+          <p class="service-box__text">На&nbsp;вашем сайте могут быть тысячи товаров, но&nbsp;основную прибыль приносит лишь небольшая их&nbsp;часть. Соберите подборку наиболее популярных товаров, избавьте покупателей от&nbsp;мучительного выбора.</p>
+
+          <p class="service-box__title service-box__title--3-2">Рекомендовать сопутствующее</p>
+
+          <p class="service-box__text">Продавайте товары, которые сочетаются так&nbsp;же хорошо, как борщ со&nbsp;сметанкой. Посоветуйте к&nbsp;новому телефону сразу купить защитное стекло, а&nbsp;к&nbsp;новым ботинкам предложите средство для чистки обуви. Мы&nbsp;анализируем поведение и&nbsp;транзакции пользователей, выявляем, какие товары чаще всего покупаются вместе, и&nbsp;выводим их&nbsp;в&nbsp;рекомендации.</p>
+
+          <p class="service-box__title service-box__title--3-3">Рекомендовать что-то особенное</p>
+
+          <p class="service-box__text">Индивидуальный подход всегда высоко ценится. Проанализируем поведение конкретного пользователя и&nbsp;подберем товары, которые с&nbsp;большей вероятностью его заинтересуют.</p>
+
+          <p class="service-box__title service-box__title--3-4">Увеличить прибыль</p>
+
+          <p class="service-box__text">Правильные рекомендации приносят доход. Просто попробуйте :)</p>
+
+          <a target="_blank" href="https://enrecom.io/?utm_source=site-enKod&utm_medium=services&utm_campaign=enRecom" class="service-box__link">
+              <p class="link__text">Сайт enRecom</p>
+
+              <img class="link__img" src="/assets/img/capabilities/arrow.svg" alt="">
+          </a>
+      </div>
+  </div>
+
+  <p class="what-can-title opasity-ani">Интеграции</p>
+
+  <p class="service-box__text what-can--title">Мы&nbsp;знаем, как важны интеграции с&nbsp;другими сервисами, поэтому с&nbsp;радостью подружимся со&nbsp;всеми необходимыми.</p>
+
+  <p class="what-can__end-text">Уже интегрировались</p>
+
+  <p class="end__comp end__comp--1">Stripo</p>
+
+  <!-- <p class="end__comp end__comp--2">Letteros</p> -->
+
+</div>

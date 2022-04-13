@@ -1,0 +1,64 @@
+<div class="main-grid ">
+    <!-- <img data-aos="fade-up" data-aos-once="true" class="main-foto " src="/assets/img/people/maximT.jpg" alt=""> -->
+
+    <div class="video-div ">
+      <video class="video-desc" autoplay muted loop playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="/assets/img/people/maximT-video-desc.mp4">
+        <source src="/assets/img/people/maximT-video-desc.webm">
+      </video>
+    </div>
+  
+    <div class="video-box qweqwe" >
+      <video class="video" autoplay muted loop playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="/assets/img/people/maximT-video.mp4">
+        <source src="/assets/img/people/maximT-video.webm">
+      </video>
+  
+      <div class="name-box name-box--for-video">
+          <p class="name__man">Максим Тишининов</p>
+          <p class="name__prof">Директор по качеству сервиса</p>
+      </div>
+    </div>
+  
+  
+    <div data-aos="fade-up" data-aos-once="true" class="content-box ">
+        <div class="name-box">
+            <p class="name__man">Максим Тишининов</p>
+            <p class="name__prof">Директор по качеству сервиса</p>
+        </div>
+  
+        <div class="buttons-box">
+          <div class="write-box ">
+            <div class="write-button" (click)="buttonClick()" [ngClass] = "buttonStatus ? 'write-button--active' : '' ">
+              <p class="write__text">Написать мне</p>
+  
+              <svg class="write__pic" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M10.6932 6.65686L4.1499 0.271794C3.93337 0.0677357 3.59244 0.0778419 3.38838 0.29437C3.18931 0.505596 3.19336 0.836537 3.39754 1.0428L9.55529 7.05169L3.5464 13.2094C3.33867 13.4223 3.34284 13.7634 3.55572 13.9711C3.76866 14.1789 4.10964 14.1747 4.3174 13.9618L10.7025 7.41855C10.9102 7.20561 10.906 6.86463 10.6932 6.65686Z" />
+                </g>
+              </svg>
+            </div>
+  
+            <a target="_blank" class="soc-img" href="mailto:maxim.tishininov@enkod.io"><img src="/assets/img/people/mail.svg" alt=""></a>
+            <a target="_blank" class="soc-img soc-img--fb" href="https://www.facebook.com/maksimtishininov"><img src="/assets/img/people/fb.svg" alt=""></a>
+            <a target="_blank" class="soc-img soc-img--teleg" href="https://t.me/mirtmax"><img src="/assets/img/people/teleg.svg" alt=""></a>
+            <a target="_blank" class="soc-img soc-img--phone" href="https://wa.me/79537479777"><img src="/assets/img/people/phone.svg" alt=""></a>
+          </div>
+  
+          <a class="add-button" href="/assets/img/people/maxim-tishininov.vcf" download>
+            <img src="/assets/img/people/add.svg" alt="">
+  
+            <p>Добавить в контакты</p>
+          </a>
+        </div>
+  
+        <p [ngClass]="{'man__text--mt': buttonStatus === true}" class="man__text man__text--mb">Привет! <br>
+          Я&nbsp;отвечаю за&nbsp;продвижение сервиса. Выясняю пожелания и&nbsp;проблемы, с&nbsp;которыми сталкивается клиент и&nbsp;рассказываю, как именно мы&nbsp;сможем ему помочь. </p>
+        
+        <p class="man__text man__text--mb">Еще одна моя задача&nbsp;&mdash; это обучение клиентов работе в&nbsp;платформе. Я&nbsp;расскажу вам, как правильно использовать enKod, как лучше настроить ту&nbsp;или иную механику. По&nbsp;вопросам функционала тоже ко&nbsp;мне 😊 </p>
+        <p class="man__text man__text--about">Воспитываю двух лохматых котов. Люблю настольный теннис.</p>
+    </div>
+  
+    <app-team class="team opasity-ani"></app-team>
+  </div>
+  

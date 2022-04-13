@@ -1,0 +1,561 @@
+<div class="fixed-mobile">
+  <div class="mobile-price-div">
+    <p class="fixed-title">Выбранные <span>модули</span></p>
+
+    <p class="fixed-price">{{(basePrice + dbPrice + messagePrice + ensendCoast + enrecomCoast + trackmoduleCoast).toString() | imask: maskNumber}} <span>руб/месяц</span></p>
+  </div>
+
+  <div class="mobile-module-box">
+    <!-- <p class="check-text fixed_check fixed_check--yellow">
+      Базовый модуль
+    </p> -->
+
+    <div class="mobile-module mobile-module--yellow">
+      <p class="fixed_check--yellow">Базовый модуль</p>
+    </div>
+
+    <div 
+      class="mobile-module"
+      (click)="addedService.ensendModule = !addedService.ensendModule;addCoast()"
+      *ngIf="addedService.ensendModule"
+    >
+      <p>enSend</p>
+      <img class="cancel" src="/assets/img/price/cancel.svg" alt="" />
+    </div>
+
+    <div 
+      class="mobile-module"
+      (click)="addedService.enrecomModule = !addedService.enrecomModule;addCoast()"
+      *ngIf="addedService.enrecomModule"
+    >
+      <p>enRecom</p>
+      <img class="cancel" src="/assets/img/price/cancel.svg" alt="" />
+    </div>
+
+    <div 
+      class="mobile-module"
+      (click)="addedService.dbModule = !addedService.dbModule;addCoast()"
+      *ngIf="addedService.dbModule"
+    >
+      <p>Таблицы данных</p>
+      <img class="cancel" src="/assets/img/price/cancel.svg" alt="" />
+    </div>
+
+    <div 
+      class="mobile-module"
+      (click)="addedService.trackModule = !addedService.trackModule;addCoast()"
+      *ngIf="addedService.trackModule"
+    >
+      <p>Трекинг действий</p>
+      <img class="cancel" src="/assets/img/price/cancel.svg" alt="" />
+    </div>
+
+    <div 
+      class="mobile-module"
+      (click)="addedService.messageModule = !addedService.messageModule;addCoast()"
+      *ngIf="addedService.messageModule"
+    >
+      <p>Пакет сообщений</p>
+      <img class="cancel" src="/assets/img/price/cancel.svg" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="main-grid-price">
+  <div class="title-box">
+    <h1 class="title">Стоимость</h1>
+  </div>
+
+  <div class="fixed">
+    <div class="fixed-block">
+      <p class="fixed-title">Выбранные <span>модули</span></p>
+
+      <p class="check-text fixed_check">
+        Базовый модуль <span>(обязательный)</span>
+      </p>
+      <p class="check-text fixed_check" *ngIf="addedService.ensendModule">
+        enSend
+        <img class="cancel" (click)="addedService.ensendModule = !addedService.ensendModule;addCoast()" src="/assets/img/price/cancel.svg" alt="" />
+      </p>
+      <p class="check-text fixed_check" *ngIf="addedService.enrecomModule">
+        enRecom
+        <img class="cancel" (click)="addedService.enrecomModule = !addedService.enrecomModule;addCoast()" src="/assets/img/price/cancel.svg" alt="" />
+      </p>
+      <p class="check-text fixed_check" *ngIf="addedService.dbModule">
+        Таблицы данных
+        <img class="cancel" (click)="addedService.dbModule = !addedService.dbModule;addCoast()" src="/assets/img/price/cancel.svg" alt="" />
+      </p>
+      <p class="check-text fixed_check" *ngIf="addedService.trackModule">
+        Трекинг действий пользователей
+        <img class="cancel" (click)="addedService.trackModule = !addedService.trackModule;addCoast()" src="/assets/img/price/cancel.svg" alt="" />
+      </p>
+      <p class="check-text fixed_check" *ngIf="addedService.messageModule">
+        Несгораемый пакет сообщений
+        <img class="cancel" (click)="addedService.messageModule = !addedService.messageModule;addCoast()" src="/assets/img/price/cancel.svg" alt="" />
+      </p>
+      <p class="fixed-price">{{(basePrice + dbPrice + messagePrice + ensendCoast + enrecomCoast + trackmoduleCoast).toString() | imask: maskNumber}} <span>руб/месяц</span></p>
+
+      <!-- <div class="fixed-button">Оформить</div> -->
+    </div>
+  </div>
+
+  <p class="module-title table-title">
+    Базовый модуль <br>
+    <span>(обязательный)</span>
+  </p>
+
+  <div class="base-module">
+    <div class="service-block__content">
+      <div class="service-block__title-box">
+
+        <img
+          class="service-block__checked"
+          src="/assets/img/price/checked.svg"
+          alt=""
+        />
+
+        <div class="service-block__message">Уже включен</div>
+
+        <p class="service-block__title">
+          Базовый модуль
+          <span class="service-block__hidden">(обязательный)</span>
+        </p>
+      </div>
+
+      <img class="base-check" src="/assets/img/price/checked.svg" alt="" />
+
+      <p class="module-text module-text--base">
+        Базовый модуль&nbsp;&mdash; основной модуль без которого невозможна
+        работа других инструментов enKod.
+      </p>
+
+      <div class="base-module_facts">
+        <p class="check-text check-text--1">Персональный эксперт 24/7</p>
+
+        <p class="check-text check-text--2">
+          Модуль всплывающих окон <a class="enpop" target="_blank" href="https://enpop.ru/">enPop</a>
+        </p>
+
+        <p class="check-text check-text--3">Удобная работа с&nbsp;сегментами</p>
+
+        <p class="check-text check-text--1 check-text--no-margin">Неограниченный размер базы</p>
+
+        <p class="check-text check-text--2 check-text--no-margin">
+          Неограниченные доступы к&nbsp;аккаунту
+        </p>
+
+        <p class="check-text check-text--3 check-text--no-margin">
+          Неограниченные отправки PUSH сообщений
+        </p>
+      </div>
+    </div>
+
+    <div class="black-block">
+      <p class="black-block__price">10 000</p>&nbsp;
+      <p class="black-block__text">&nbsp;руб/месяц</p>
+    </div>
+  </div>
+
+  <p class="module-title">Дополнительные модули</p>
+
+  <div class="service-block service-block--left"
+    [ngClass]="addedService.ensendModule ? 'service-block--active' : 'service-block--inactive'"
+  >
+    <div class="service-block__content">
+      <svg 
+        (click)="addedService.ensendModule = !addedService.ensendModule;addCoast()"
+        *ngIf="!addedService.ensendModule"
+         class="add-button" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="fill-yellow" cx="26" cy="26" r="26" fill="#ffffff"/>
+        <circle cx="26" cy="25.9999" r="23.6364" fill="#222227"/>
+        <path class="fill-yellow" d="M16.5455 25.8718L35.2125 25.8718" stroke="#ffffff" stroke-width="1.69392"/>
+        <path class="fill-yellow" d="M25.8794 16.8284L25.8794 35.2125" stroke="#ffffff" stroke-width="1.69392"/>
+      </svg>
+
+      <img class="add-button add-button--checked" src="/assets/img/price/checked.svg" alt=""
+        (click)="addedService.ensendModule = !addedService.ensendModule;addCoast()"
+        [ngClass]="{'add-button--checked-true': addedService.ensendModule}"
+      />
+
+      <img class="block-logo" src="/assets/img/price/enSend.svg" alt="" />
+
+      <p class="module-text text-box">
+        Инструмент для автоматизации рассылок. Общайтесь с&nbsp;клиентами там,
+        где им&nbsp;удобно!
+      </p>
+
+      <p class="check-text">1 000 000 email сообщений</p>
+
+      <p class="check-text">Неограниченное количество доменов</p>
+
+      <p class="small-text">
+        Объемы свыше 1&nbsp;млн рассчитываются по&nbsp;CPM&nbsp;&mdash; до&nbsp;25&nbsp;рублей за&nbsp;1&nbsp;000&nbsp;сообщений. Чем больше объем, тем дешевле тариф.
+      </p>
+
+      <p class="small-text small-text--mt">
+        Стоимость за&nbsp;модуль enSend для клиентов с&nbsp;объемами до&nbsp;10&nbsp;млн
+      </p>
+    </div>
+
+    <div class="black-block">
+      <p class="black-block__price">25 000</p>
+      <p class="black-block__text">&nbsp;руб/месяц</p>
+    </div>
+  </div>
+
+  <div class="service-block service-block--right"
+    [ngClass]="addedService.enrecomModule ? 'service-block--active' : 'service-block--inactive'"
+  >
+    <div class="service-block__content">
+      <svg 
+        (click)="addedService.enrecomModule = !addedService.enrecomModule;addCoast()"
+        (click)="cancelTrack()"
+        *ngIf="!addedService.enrecomModule"
+         class="add-button" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="fill-yellow" cx="26" cy="26" r="26" fill="#ffffff"/>
+        <circle cx="26" cy="25.9999" r="23.6364" fill="#222227"/>
+        <path class="fill-yellow" d="M16.5455 25.8718L35.2125 25.8718" stroke="#ffffff" stroke-width="1.69392"/>
+        <path class="fill-yellow" d="M25.8794 16.8284L25.8794 35.2125" stroke="#ffffff" stroke-width="1.69392"/>
+      </svg>
+      
+      <img class="add-button add-button--checked" src="/assets/img/price/checked.svg" alt=""
+        (click)="addedService.enrecomModule = !addedService.enrecomModule;addCoast()"
+        (click)="cancelTrack()"
+        [ngClass]="{'add-button--checked-true': addedService.enrecomModule}"
+      />
+
+      <img class="block-logo" src="/assets/img/price/enRecom.svg" alt="" />
+
+      <p class="module-text text-box">
+        Инструмент для формирования и&nbsp;показа рекомендаций. Мы&nbsp;помогаем
+        вам увеличивать прибыль, вы&nbsp;помогаете своим клиентам сделать
+        правильный выбор.
+      </p>
+
+      <div class="check-text check-text--enrecom">
+        Cross-Sale
+
+        <div class="tooltip-box">
+          <svg class="tooltip" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="tooltip--yellow" d="M12 0C5.36705 0 0 5.36752 0 12C0 18.633 5.36752 24 12 24C18.633 24 24 18.6325 24 12C24 5.36705 18.6324 0 12 0ZM12 22.125C6.40345 22.125 1.875 17.5962 1.875 12C1.875 6.40345 6.40383 1.875 12 1.875C17.5965 1.875 22.125 6.40383 22.125 12C22.125 17.5965 17.5961 22.125 12 22.125Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 10.0466C11.4822 10.0466 11.0625 10.4663 11.0625 10.9841V17.0213C11.0625 17.5391 11.4822 17.9588 12 17.9588C12.5178 17.9588 12.9375 17.539 12.9375 17.0213V10.9841C12.9375 10.4663 12.5178 10.0466 12 10.0466Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 8.89868C12.699 8.89868 13.2656 8.33204 13.2656 7.63306C13.2656 6.93407 12.699 6.36743 12 6.36743C11.301 6.36743 10.7344 6.93407 10.7344 7.63306C10.7344 8.33204 11.301 8.89868 12 8.89868Z" fill="#5C5C5C"/>
+          </svg>
+
+          <img class="bup-mob" src="/assets/img/price/bup-mobile.svg" alt="" />
+
+          <div class="hint">
+            <p class="hint__text">Продавайте товары, которые сочетаются так&nbsp;же хорошо, как борщ со&nbsp;сметанкой. Посоветуйте к&nbsp;новому телефону сразу купить защитное стекло, а&nbsp;к&nbsp;новым ботинкам предложите пару носков. Мы&nbsp;анализируем поведение и&nbsp;транзакции пользователей, выявляем, какие товары чаще всего покупаются вместе, и&nbsp;выводим их&nbsp;в&nbsp;рекомендации.</p>
+          </div>
+        </div>
+
+        <div class="hint-mob">
+          <p class="hint__text">Продавайте товары, которые сочетаются так&nbsp;же хорошо, как борщ со&nbsp;сметанкой. Посоветуйте к&nbsp;новому телефону сразу купить защитное стекло, а&nbsp;к&nbsp;новым ботинкам предложите пару носков. Мы&nbsp;анализируем поведение и&nbsp;транзакции пользователей, выявляем, какие товары чаще всего покупаются вместе, и&nbsp;выводим их&nbsp;в&nbsp;рекомендации.</p>
+        </div>
+      </div>
+
+      <div class="check-text check-text--enrecom">
+        Популярные товары
+        
+        <div class="tooltip-box">
+          <svg class="tooltip" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="tooltip--yellow" d="M12 0C5.36705 0 0 5.36752 0 12C0 18.633 5.36752 24 12 24C18.633 24 24 18.6325 24 12C24 5.36705 18.6324 0 12 0ZM12 22.125C6.40345 22.125 1.875 17.5962 1.875 12C1.875 6.40345 6.40383 1.875 12 1.875C17.5965 1.875 22.125 6.40383 22.125 12C22.125 17.5965 17.5961 22.125 12 22.125Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 10.0466C11.4822 10.0466 11.0625 10.4663 11.0625 10.9841V17.0213C11.0625 17.5391 11.4822 17.9588 12 17.9588C12.5178 17.9588 12.9375 17.539 12.9375 17.0213V10.9841C12.9375 10.4663 12.5178 10.0466 12 10.0466Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 8.89868C12.699 8.89868 13.2656 8.33204 13.2656 7.63306C13.2656 6.93407 12.699 6.36743 12 6.36743C11.301 6.36743 10.7344 6.93407 10.7344 7.63306C10.7344 8.33204 11.301 8.89868 12 8.89868Z" fill="#5C5C5C"/>
+          </svg>
+
+          <img class="bup-mob" src="/assets/img/price/bup-mobile.svg" alt="" />
+
+          <div class="hint">
+            <p class="hint__text">На&nbsp;вашем сайте могут быть тысячи товаров, но&nbsp;основную прибыль приносит лишь небольшая их&nbsp;часть. Соберите подборку наиболее популярных товаров, избавьте покупателей от&nbsp;мучительного выбора.</p>
+          </div>
+        </div>
+
+        <div class="hint-mob">
+          <p class="hint__text">На&nbsp;вашем сайте могут быть тысячи товаров, но&nbsp;основную прибыль приносит лишь небольшая их&nbsp;часть. Соберите подборку наиболее популярных товаров, избавьте покупателей от&nbsp;мучительного выбора.</p>
+        </div>
+      </div>
+
+      <div class="check-text check-text--enrecom">
+        Похожие товары
+        
+        <div class="tooltip-box">
+          <svg class="tooltip" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="tooltip--yellow" d="M12 0C5.36705 0 0 5.36752 0 12C0 18.633 5.36752 24 12 24C18.633 24 24 18.6325 24 12C24 5.36705 18.6324 0 12 0ZM12 22.125C6.40345 22.125 1.875 17.5962 1.875 12C1.875 6.40345 6.40383 1.875 12 1.875C17.5965 1.875 22.125 6.40383 22.125 12C22.125 17.5965 17.5961 22.125 12 22.125Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 10.0466C11.4822 10.0466 11.0625 10.4663 11.0625 10.9841V17.0213C11.0625 17.5391 11.4822 17.9588 12 17.9588C12.5178 17.9588 12.9375 17.539 12.9375 17.0213V10.9841C12.9375 10.4663 12.5178 10.0466 12 10.0466Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 8.89868C12.699 8.89868 13.2656 8.33204 13.2656 7.63306C13.2656 6.93407 12.699 6.36743 12 6.36743C11.301 6.36743 10.7344 6.93407 10.7344 7.63306C10.7344 8.33204 11.301 8.89868 12 8.89868Z" fill="#5C5C5C"/>
+          </svg>
+
+          <img class="bup-mob" src="/assets/img/price/bup-mobile.svg" alt="" />
+
+          <div class="hint">
+            <p class="hint__text">Ищущий синюю футболку может согласиться и&nbsp;на&nbsp;красную, а&nbsp;желание купить кеды вполне способно привести к&nbsp;покупке кроссовок. enRecom на&nbsp;основе анализа свойств товаров и&nbsp;поведения людей умеет подбирать&nbsp;те, которые наиболее похожи на&nbsp;исходный товар.</p>
+          </div>
+        </div>
+
+        <div class="hint-mob">
+          <p class="hint__text">Ищущий синюю футболку может согласиться и&nbsp;на&nbsp;красную, а&nbsp;желание купить кеды вполне способно привести к&nbsp;покупке кроссовок. enRecom на&nbsp;основе анализа свойств товаров и&nbsp;поведения людей умеет подбирать&nbsp;те, которые наиболее похожи на&nbsp;исходный товар.</p>
+        </div>
+      </div>
+
+      <div class="check-text check-text--long check-text--enrecom">
+        Трекинг действий пользователей на&nbsp;сайте
+        
+        <div class="tooltip-box">
+          <svg class="tooltip" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="tooltip--yellow" d="M12 0C5.36705 0 0 5.36752 0 12C0 18.633 5.36752 24 12 24C18.633 24 24 18.6325 24 12C24 5.36705 18.6324 0 12 0ZM12 22.125C6.40345 22.125 1.875 17.5962 1.875 12C1.875 6.40345 6.40383 1.875 12 1.875C17.5965 1.875 22.125 6.40383 22.125 12C22.125 17.5965 17.5961 22.125 12 22.125Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 10.0466C11.4822 10.0466 11.0625 10.4663 11.0625 10.9841V17.0213C11.0625 17.5391 11.4822 17.9588 12 17.9588C12.5178 17.9588 12.9375 17.539 12.9375 17.0213V10.9841C12.9375 10.4663 12.5178 10.0466 12 10.0466Z" fill="#5C5C5C"/>
+            <path class="tooltip--yellow" d="M12 8.89868C12.699 8.89868 13.2656 8.33204 13.2656 7.63306C13.2656 6.93407 12.699 6.36743 12 6.36743C11.301 6.36743 10.7344 6.93407 10.7344 7.63306C10.7344 8.33204 11.301 8.89868 12 8.89868Z" fill="#5C5C5C"/>
+          </svg>
+
+          <img class="bup-mob" src="/assets/img/price/bup-mobile.svg" alt="" />
+
+          <div class="hint">
+            <p class="hint__text">Трекинг&nbsp;&mdash; скрипт который отслеживает действия пользователей на&nbsp;сайте. Используя данные трекинга можно делать такие сценарии как брошенная корзина, брошенный просмотр и&nbsp;др.</p>
+          </div>
+        </div>
+
+        <div class="hint-mob hint-mob--long">
+          <p class="hint__text">Трекинг&nbsp;&mdash; скрипт который отслеживает действия пользователей на&nbsp;сайте. Используя данные трекинга можно делать такие сценарии как брошенная корзина, брошенный просмотр и&nbsp;др.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-block">
+      <p class="black-block__price">39 000</p>
+      <p class="black-block__text">&nbsp;руб/месяц</p>
+    </div>
+  </div>
+
+  <p class="module-title module-title--2">Другие опции</p>
+
+  <div class="service-block service-block--db"
+    [ngClass]="addedService.dbModule ? 'service-block--active' : 'service-block--inactive'"
+  >
+    <div class="service-block__content">
+      <svg 
+        (click)="addedService.dbModule = !addedService.dbModule;addDbModuleCoast()"
+        *ngIf="!addedService.dbModule"
+         class="add-button" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="fill-yellow" cx="26" cy="26" r="26" fill="#ffffff"/>
+        <circle cx="26" cy="25.9999" r="23.6364" fill="#222227"/>
+        <path class="fill-yellow" d="M16.5455 25.8718L35.2125 25.8718" stroke="#ffffff" stroke-width="1.69392"/>
+        <path class="fill-yellow" d="M25.8794 16.8284L25.8794 35.2125" stroke="#ffffff" stroke-width="1.69392"/>
+      </svg>
+
+      <img class="add-button add-button--checked" src="/assets/img/price/checked.svg" alt=""
+        (click)="addedService.dbModule = !addedService.dbModule;addDbModuleCoast()"
+        [ngClass]="{'add-button--checked-true': addedService.dbModule}"
+      />
+
+      <div class="long-title-box">
+        <p class="long-title">Таблицы данных</p>
+        <p [ngClass]="{'title-box-small-text--active': dbPrice === 9500}" class="title-box-small-text">30&nbsp;ГБ это оптимальное количество для вас</p>
+      </div>
+
+      <p class="long-text">
+        Хранилища для любой информации. Данные из&nbsp;таблиц можно выводить
+        в&nbsp;письмо или использовать для сегментации клиентов.
+      </p>
+
+      <div class="slider-box">
+        <div class="slider-numbers-box">
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 16000}" class="slider-numbers-value">30&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 18000}" class="slider-numbers-value">40&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 20000}" class="slider-numbers-value">50&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 22000}" class="slider-numbers-value">60&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 24000}" class="slider-numbers-value">70&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 26000}" class="slider-numbers-value">80&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 28000}" class="slider-numbers-value">90&nbsp;ГБ</p>
+            </div>
+
+            <div class="slider-numbers-div">
+              <p [ngClass]="{'slider-numbers-value--active': dbPrice === 30000}" class="slider-numbers-value">100&nbsp;ГБ</p>
+            </div>
+        </div>
+        <tui-slider [(ngModel)]="dbPrice"
+          [disabled]="!addedService.dbModule"
+          [keySteps]="keyStepsDb"
+          [min]="16000"
+          [max]="30000"
+          [segments]="7"
+          [steps]="7"
+        ></tui-slider>
+      </div>
+    </div>
+
+    <div class="black-block">
+      <ng-container *ngIf="!addedService.dbModule; else elseTemplateDb">
+        <p class="black-block__price">16 000</p>
+      </ng-container>
+      <ng-template #elseTemplateDb>
+        <p class="black-block__price">{{dbPrice.toString() | imask: maskNumber}}</p>
+      </ng-template>
+
+      <p class="black-block__text">&nbsp;руб/месяц</p>
+    </div>
+  </div>
+
+  <div class="service-block service-block--track"
+    [ngClass]="addedService.trackModule ? 'service-block--active' : 'service-block--inactive'"
+    [ngClass]="{'service-block--disable': addedService.enrecomModule}"
+  >
+    <div class="service-block__content">
+      <svg 
+        (click)="addedService.trackModule = !addedService.trackModule;addCoast()"
+        *ngIf="!addedService.trackModule"
+        [ngClass]="{'add-button--disabled': addedService.enrecomModule}"
+         class="add-button" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          [ngClass]="{'fill-yellow--disable': addedService.enrecomModule}"
+          class="fill-yellow" cx="26" cy="26" r="26" fill="#ffffff"
+        />
+        <circle cx="26" cy="25.9999" r="23.6364" fill="#222227"/>
+        <path [ngClass]="{'fill-yellow--disable': addedService.enrecomModule}" class="fill-yellow" d="M16.5455 25.8718L35.2125 25.8718" stroke="#ffffff" stroke-width="1.69392"/>
+        <path [ngClass]="{'fill-yellow--disable': addedService.enrecomModule}" class="fill-yellow" d="M25.8794 16.8284L25.8794 35.2125" stroke="#ffffff" stroke-width="1.69392"/>
+      </svg>
+
+      <img class="add-button add-button--checked" src="/assets/img/price/checked.svg" alt=""
+        (click)="addedService.trackModule = !addedService.trackModule;addCoast()"
+        [ngClass]="{'add-button--checked-true': addedService.trackModule}"
+      />
+
+      <div class="long-title-box">
+       <p class="long-title long-title--hide"
+          [ngClass]="{'text-disable': addedService.enrecomModule}"
+        >Трекинг действий пользователей на&nbsp;сайте</p>
+        <p class="long-title long-title--show"
+          [ngClass]="{'text-disable': addedService.enrecomModule}"
+        >Трекинг</p>
+        <p [ngClass]="{'title-box-tracker-text--active': addedService.enrecomModule}" class="title-box-tracker-text">Включен в&nbsp;модуль enRecom</p>
+      </div>
+
+      <p class="long-text"
+        [ngClass]="{'text-disable': addedService.enrecomModule}"
+      >
+        Трекинг&nbsp;&mdash; скрипт который отслеживает действия пользователей
+        на&nbsp;сайте. Используя данные трекинга можно делать такие сценарии как
+        брошенная корзина, брошенный просмотр и&nbsp;др.
+      </p>
+    </div>
+
+    <div class="black-block">
+      <p class="black-block__price"
+        [ngClass]="{'text-disable': addedService.enrecomModule}"
+      >16 000</p>
+      <p class="black-block__text"
+        [ngClass]="{'text-disable': addedService.enrecomModule}"
+      >&nbsp;руб/месяц</p>
+    </div>
+  </div>
+
+  <div class="service-block service-block--message"
+    [ngClass]="addedService.messageModule ? 'service-block--active' : 'service-block--inactive'"
+  >
+    <div class="service-block__content">
+      <svg 
+        (click)="addedService.messageModule = !addedService.messageModule;addMessageCoast()"
+        *ngIf="!addedService.messageModule"
+         class="add-button" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="fill-yellow" cx="26" cy="26" r="26" fill="#ffffff"/>
+        <circle cx="26" cy="25.9999" r="23.6364" fill="#222227"/>
+        <path class="fill-yellow" d="M16.5455 25.8718L35.2125 25.8718" stroke="#ffffff" stroke-width="1.69392"/>
+        <path class="fill-yellow" d="M25.8794 16.8284L25.8794 35.2125" stroke="#ffffff" stroke-width="1.69392"/>
+      </svg>
+
+      <img class="add-button add-button--checked" src="/assets/img/price/checked.svg" alt=""
+        (click)="addedService.messageModule = !addedService.messageModule;addMessageCoast()"
+        [ngClass]="{'add-button--checked-true': addedService.messageModule}"
+      />
+
+      <p class="long-title">Несгораемый пакет <br class="br-show"> сообщений</p>
+
+      <p class="long-text">
+        Дополнительный объем сообщений, который не&nbsp;сгорает в&nbsp;начале
+        месяца, его можно использовать когда угодно.
+      </p>
+    <div class="slider-box">
+      <div class="slider-numbers-box">
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 21000}" class="slider-numbers-value slider-numbers-value--message">1&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 42000}" class="slider-numbers-value slider-numbers-value--message">2&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 63000}" class="slider-numbers-value slider-numbers-value--message">3&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 76000}" class="slider-numbers-value slider-numbers-value--message">4&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 95000}" class="slider-numbers-value slider-numbers-value--message">5&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 102000}" class="slider-numbers-value slider-numbers-value--message">6&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 119000}" class="slider-numbers-value slider-numbers-value--message">7&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 136000}" class="slider-numbers-value slider-numbers-value--message">8&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 153000}" class="slider-numbers-value slider-numbers-value--message">9&nbsp;000&nbsp;000</p>
+          </div>
+
+          <div class="slider-numbers-div">
+            <p [ngClass]="{'slider-numbers-value--active': messagePrice === 170000}" class="slider-numbers-value slider-numbers-value--message">10&nbsp;000&nbsp;000</p>
+          </div>
+        </div>
+
+        <tui-slider [(ngModel)]="messagePrice"
+          [disabled]="!addedService.messageModule"
+          [keySteps]="keyStepsMessage"
+          [min]="21000"
+          [max]="170000"
+          [segments]="9"
+          [steps]="9"
+        ></tui-slider>
+      </div>
+    </div>
+
+    <div class="black-block">
+      <ng-container *ngIf="!addedService.messageModule; else elseTemplateMessagePack">
+        <p class="black-block__price">21 000</p>
+      </ng-container>
+      <ng-template #elseTemplateMessagePack>
+        <p class="black-block__price">{{messagePrice.toString() | imask: maskNumber}}</p>
+      </ng-template>
+
+      <p class="black-block__text">&nbsp;руб</p>
+    </div>
+  </div>
+</div>
